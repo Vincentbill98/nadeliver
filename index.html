@@ -1,0 +1,2528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nadeliver</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png"/>
+
+  <!-- Jarallax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.min.js"></script>
+
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/example1/colorbox.min.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header_section sticky-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="Sport Bra Haven" height="50"/>
+      </a>
+      <div class="d-flex gap-2">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search products..." 
+          class="form-control d-inline-block w-auto"
+        />
+        <button class="btn btn-primary" id="searchBtn">Search</button>
+        <a href="cart.html" class="btn btn-light position-relative">
+          🛒 <span id="cartCount" class="badge bg-danger">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+<!-- ===================================
+     ACTION BUTTONS SECTION (4 Cards Inline)
+=================================== -->
+<!-- ✅ Product Quick Navigation Section -->
+<section class="container my-4">
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+
+    <!-- 1️⃣ SELECT CATEGORY -->
+    <div class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Select Category
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#jerseys">Cycling Jerseys</a></li>
+        <li><a class="dropdown-item" href="#new-arrivals">New Arrivals</a></li>
+        <li><a class="dropdown-item" href="#watches">Watches</a></li>
+        <li><a class="dropdown-item" href="#bicycle-accessories">Bicycle Accessories</a></li>
+        <li><a class="dropdown-item" href="#cyclist-accessories">Cyclist Accessories</a></li>
+        <li><a class="dropdown-item" href="#headlights-taillights">Headlights & Taillights</a></li>
+        <li><a class="dropdown-item" href="#cycling-tech">Cycling Tech</a></li>
+        <li><a class="dropdown-item" href="#best-sellers">Best Sellers</a></li>
+        <li><a class="dropdown-item" href="#bags">Bags & Purses</a></li>
+      </ul>
+    </div>
+
+    <!-- 2️⃣ SEE DEALS -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        See Deals
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#discounts">Discounts</a></li>
+        <li><a class="dropdown-item" href="#clearance">Clearance</a></li>
+        <li><a class="dropdown-item" href="#flash-sales">Flash Sales</a></li>
+      </ul>
+    </div>
+
+    <!-- 3️⃣ GET IN TOUCH -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Get In Touch
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#contact-form">Contact Form</a></li>
+        <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+        <li><a class="dropdown-item" href="#support">Customer Support</a></li>
+      </ul>
+    </div>
+
+    <!-- 4️⃣ BUY NOW -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Buy Now
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#gift-cards">Gift Cards</a></li>
+        <li><a class="dropdown-item" href="#gift-guide">Gift Guide</a></li>
+        <li><a class="dropdown-item" href="#gift-balance">Check Balance</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Product Section -->
+
+<section id="jerseys" class="container my-5">
+  <h2 class="mb-4">Cyclist Zone</h2>
+
+  <!-- Swiper -->
+  <div class="swiper jersey-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Darevie Jersey" data-price="3500">
+          <div class="card">
+            <div id="carouselDarevieGroup1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/jersey.jpg" class="d-block w-100" alt="Pink Jersey">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/jersey1.jpg" class="d-block w-100" alt="White Jersey">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/jersey2.jpg" class="d-block w-100" alt="Black Jersey">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarevieGroup1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselDarevieGroup1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Cycling Jersey</h5>
+              <p>KSH 3,500</p>
+              <p>High-performance cycling jersey </p>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal" aria-label="Select Color" title="Select Color">
+                <i class="bi bi-funnel"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+                <i class="bi bi-droplet"></i>
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Cycling Shoes with Cleats" data-price="7800">
+          <div class="card">
+            <div id="carouselShoesWithClips" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cycling_shoes_clips1.jpg" class="d-block w-100" alt="Cycling Shoes with Cleats 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/cycling_shoes_clips2.jpg" class="d-block w-100" alt="Cycling Shoes with Cleats 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselShoesWithClips" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselShoesWithClips" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Cycling Shoes with Cleats</h5>
+            <p>KSH 7,800</p>
+            <p>SPD-compatible clip-in shoes</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+  <i class="bi bi-rulers"></i>
+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Darevie Bibshorts" data-price="4000">
+          <div class="card">
+            <div id="carouselDarevieBibshortsGroup1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/bibshorts.jpg" class="d-block w-100" alt="Pink Bibshorts">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bibshorts1.jpg" class="d-block w-100" alt="White Bibshorts">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bibshorts2.jpg" class="d-block w-100" alt="Black Bibshorts">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarevieBibshortsGroup1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselDarevieBibshortsGroup1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Bibshorts</h5>
+              <p>KSH 4,000</p>
+              <p>Pro-fit bibshorts </p>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal" aria-label="Select Color" title="Select Color">
+                <i class="bi bi-funnel"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+                <i class="bi bi-droplet"></i>
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Slide: Female Jerseys Group 1 -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Female Jersey" data-price="3500">
+          <div class="card">
+            <div id="carouselFemaleJerseysGroup1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/female-jersey.jpg" class="d-block w-100" alt="Red Female Cycling Jersey">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/female-jersey1.jpg" class="d-block w-100" alt="Blue Female Cycling Jersey">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/female-jersey2.jpg" class="d-block w-100" alt="Pink Female Cycling Jersey">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselFemaleJerseysGroup1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselFemaleJerseysGroup1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Jersey</h5>
+              <p>KSH 3,500</p>
+              <p>Lightweight, stylish & sweat-wicking</p>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal" aria-label="Select Color" title="Select Color">
+                <i class="bi bi-funnel"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+                <i class="bi bi-droplet"></i>
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Slide: Darevie Padded Shorts Group 1 -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Darevie Padded Shorts" data-price="3000">
+          <div class="card">
+            <div id="carouselDareviePaddedGroup1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/padded.jpg" class="d-block w-100" alt="Pink Padded Shorts">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/padded1.jpg" class="d-block w-100" alt="White Padded Shorts">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/padded2.jpg" class="d-block w-100" alt="Black Padded Shorts">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDareviePaddedGroup1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselDareviePaddedGroup1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Padded Shorts</h5>
+              <p>KSH 3,000</p>
+              <p>Padded shorts</p>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal" aria-label="Select Color" title="Select Color">
+                <i class="bi bi-funnel"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+                <i class="bi bi-droplet"></i>
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Slide: Compression Socks Group 1 -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Compression Socks" data-price="1000">
+          <div class="card">
+            <div id="carouselCompressionSocksGroup1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/compression.jpg" class="d-block w-100" alt="Black Compression Socks">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/compression1.jpg" class="d-block w-100" alt="Blue Compression Socks">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/compression2.jpg" class="d-block w-100" alt="White Compression Socks">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCompressionSocksGroup1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCompressionSocksGroup1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Compression Socks</h5>
+              <p>KSH 1,000</p>
+              <p>Boost circulation & reduce fatigue</p>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal" aria-label="Select Color" title="Select Color">
+              <i class="bi bi-funnel"></i>
+            </button>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Cycling Shoes" data-price="6500">
+          <div class="card">
+            <div id="carouselCyclingShoes" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cycling_shoes1.jpg" class="d-block w-100" alt="Cycling Shoes 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/cycling_shoes3.jpg" class="d-block w-100" alt="Cycling Shoes 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCyclingShoes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCyclingShoes" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Cycling Shoes</h5>
+            <p>KSH 6,500</p>
+            <p>Clipless design for better power transfer & comfort.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+  <i class="bi bi-rulers"></i>
+</button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<!-- Color Selection Modal (once, global) -->
+<div class="modal fade" id="colorModal" tabindex="-1" aria-labelledby="colorModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="colorModalLabel">Select Jersey Color</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Pink')">Pink</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('White')">White</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Black')">Black</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Brown')">Brown</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Blue')">Blue</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Purple')">Purple</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Yellow')">Yellow</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('Orange')">Orange</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseColor('LightBlue')">Light Blue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="new-arrivals" class="container my-5">
+  <h2 class="mb-4">New Arrivals</h2>
+
+  <div class="swiper sports-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Grey Sport Bra -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Grey Sport Bra" data-price="4999">
+          <div class="card">
+            <div id="carouselGreyBra" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/mage.jpg" class="d-block w-100" alt="Grey Sport Bra 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mage1.jpg" class="d-block w-100" alt="Grey Sport Bra 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mage2.jpg" class="d-block w-100" alt="Grey Sport Bra 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mage3.jpg" class="d-block w-100" alt="Grey Sport Bra 4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselGreyBra" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselGreyBra" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Grey Sport Bra</h5>
+            <p>KSH 4,999 - Large</p>
+            <p>Comfortable and supportive. Perfect for daily workouts.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+              <i class="bi bi-droplet"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Black Sport Bra -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Black Sport Bra" data-price="5199">
+          <div class="card">
+            <div id="carouselBlackBra" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/papa.jpg" class="d-block w-100" alt="Black Sport Bra 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/papa1.jpg" class="d-block w-100" alt="Black Sport Bra 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/papa2.jpg" class="d-block w-100" alt="Black Sport Bra 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/papa3.jpg" class="d-block w-100" alt="Black Sport Bra 4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlackBra" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBlackBra" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Black Sport Bra</h5>
+            <p>KSH 5,199 - XL</p>
+            <p>Classic black. Perfect for gym or everyday wear.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+              <i class="bi bi-droplet"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Red Sport Bra -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Red Sport Bra" data-price="4499">
+          <div class="card">
+            <div id="carouselRedBra" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/mesh-sport.jpg" class="d-block w-100" alt="Red Sport Bra 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mesh-sport1.jpg" class="d-block w-100" alt="Red Sport Bra 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mesh-sport2.jpg" class="d-block w-100" alt="Red Sport Bra 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mesh-sport3.jpg" class="d-block w-100" alt="Red Sport Bra 4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselRedBra" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselRedBra" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Red Sport Bra</h5>
+            <p>KSH 4,499 - Medium</p>
+            <p>Stylish, breathable, and comfortable for all activities.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+              <i class="bi bi-droplet"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- White Sport Bra -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="White Sport Bra" data-price="5199">
+          <div class="card">
+            <div id="carouselWhiteBra" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/obren.jpg" class="d-block w-100" alt="White Sport Bra 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/obren1.jpg" class="d-block w-100" alt="White Sport Bra 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/obren2.jpg" class="d-block w-100" alt="White Sport Bra 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/obren3.jpg" class="d-block w-100" alt="White Sport Bra 4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselWhiteBra" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselWhiteBra" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>White Sport Bra</h5>
+            <p>KSH 5,199 - XL</p>
+            <p>Classic white. Perfect for gym or daily wear.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+              <i class="bi bi-droplet"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pink Sport Bra -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Pink Sport Bra" data-price="5199">
+          <div class="card">
+            <div id="carouselPinkBra" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/mes-sport.jpg" class="d-block w-100" alt="Pink Sport Bra 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mes-sport1.jpg" class="d-block w-100" alt="Pink Sport Bra 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mes-sport2.jpg" class="d-block w-100" alt="Pink Sport Bra 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mes-sport3.jpg" class="d-block w-100" alt="Pink Sport Bra 4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPinkBra" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPinkBra" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Pink Sport Bra</h5>
+            <p>KSH 5,199 - XL</p>
+            <p>Soft pastel pink. Perfect for yoga or daily wear.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-sm btn-outline-secondary btn-filter ms-1" data-bs-toggle="modal" data-bs-target="#sizeModal" aria-label="Select Size" title="Select Size">
+              <i class="bi bi-droplet"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Controls -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <!-- Product Section -->
+
+   <section id="watches" class="container my-5">
+  <h2>Watch</h2>
+  <div class="swiper watch-swiper">
+    <div class="swiper-wrapper">
+
+
+<!-- Binbond 1236 -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="Binbond 1236" data-price="1700">
+    <div class="card">
+      <div id="carouselBinbond1236" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/binbond1.jpg" class="d-block w-100" alt="Binbond 1236">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/binbond2.jpg" class="d-block w-100" alt="Binbond 1236">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/binbond3.jpg" class="d-block w-100" alt="Binbond 1236">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/binbond4.jpg" class="d-block w-100" alt="Binbond 1236">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Binbond 1236</h5>
+      <p>KSH 2500</p>
+      <p>Durable leather straps. Chronograph. Water resistant. Free branded box.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="Binbond HXN106" data-price="1600">
+    <div class="card">
+      <div id="carouselBinbondHXN106" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/binbond_hxn106_1.jpg" class="d-block w-100" alt="Binbond HXN106 Watch 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond_hxn106_2.jpg" class="d-block w-100" alt="Binbond HXN106 Watch 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond_hxn106_3.jpg" class="d-block w-100" alt="Binbond HXN106 Watch 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond_hxn106_4.jpg" class="d-block w-100" alt="Binbond HXN106 Watch 4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBinbondHXN106" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBinbondHXN106" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Binbond HXN106</h5>
+      <p>KSH 2,500</p>
+      <p>
+        Quartz lady’s watch. Stainless steel. Non-fade finish.Comes with a free branded box.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Olevs 2890 -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="Olevs 2890" data-price="2500">
+    <div class="card">
+      <div id="carouselOlevs2890" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/olevs28901.jpg" class="d-block w-100" alt="Olevs 2890">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/olevs28902.jpg" class="d-block w-100" alt="Olevs 2890">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/olevs28903.jpg" class="d-block w-100" alt="Olevs 2890">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/olevs28904.jpg" class="d-block w-100" alt="Olevs 2890">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Olevs 2890</h5>
+      <p>KSH 3,000</p>
+      <p>Durable leather straps. Chronograph. Date display. Moon phase.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Floral Boxes -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="Floral Boxes" data-price="500">
+    <div class="card">
+      <div id="carouselFloralBoxes" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/floralboxes.jpg" class="d-block w-100" alt="Floral Boxes">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Floral Boxes</h5>
+      <p>KSH 800</p>
+      <p>Gift bag. Gift box. Gift card.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+  <div class="swiper-slide">
+  <div class="product-card" data-name="OLEVS 5609 Watch" data-price="1800">
+    <div class="card">
+      <div id="carouselOLEVS5609" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/olevs_5609_1.jpg" class="d-block w-100" alt="OLEVS 5609 Watch 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/olevs_5609_2.jpg" class="d-block w-100" alt="OLEVS 5609 Watch 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/olevs_5609_3.jpg" class="d-block w-100" alt="OLEVS 5609 Watch 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/olevs_5609_4.jpg" class="d-block w-100" alt="OLEVS 5609 Watch 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOLEVS5609" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOLEVS5609" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>OLEVS 5609 Watch</h5>
+      <p>KSH 2,500 </p>
+      <p> Calendar display. Water resistant.  Stainless steel. Non-fade design</p>
+         
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="Binbond 7741" data-price="1700">
+    <div class="card">
+      <div id="carouselBinbond7741" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/binbond7741_1.jpg" class="d-block w-100" alt="Binbond 7741 Watch 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond7741_2.jpg" class="d-block w-100" alt="Binbond 7741 Watch 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond7741_3.jpg" class="d-block w-100" alt="Binbond 7741 Watch 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond7741_4.jpg" class="d-block w-100" alt="Binbond 7741 Watch 4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBinbond7741" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBinbond7741" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Binbond 7741</h5>
+      <p>KSH 2,700</p>
+      <p>
+        Stainless steel build. 12-hour time display. Moon phase & luminous display.Water resistant. Comes with a free branded box. 
+      </p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="CRRJU 2262" data-price="2500">
+    <div class="card">
+      <div id="carouselCRRJU2262" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/crrju2262_1.jpg" class="d-block w-100" alt="CRRJU 2262 Watch">
+          </div>
+          <div class="carousel-item">
+            <img src="images/crrju2262_2.jpg" class="d-block w-100" alt="CRRJU 2262 Watch">
+          </div>
+          <div class="carousel-item">
+            <img src="images/crrju2262_3.jpg" class="d-block w-100" alt="CRRJU 2262 Watch">
+          </div>
+          <div class="carousel-item">
+            <img src="images/crrju2262_4.jpg" class="d-block w-100" alt="CRRJU 2262 Watch">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCRRJU2262" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCRRJU2262" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>CRRJU 2262</h5>
+      <p>KSH 3,500</p>
+      <p>Stainless steel. Water resistant. Chronograph. Date display.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="Binbond 707" data-price="2100">
+    <div class="card">
+      <div id="carouselBinbond707" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/binbond707_1.jpg" class="d-block w-100" alt="Binbond 707 Watch 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond707_2.jpg" class="d-block w-100" alt="Binbond 707 Watch 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond707_3.jpg" class="d-block w-100" alt="Binbond 707 Watch 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/binbond707_4.jpg" class="d-block w-100" alt="Binbond 707 Watch 4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBinbond707" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBinbond707" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Binbond 707</h5>
+      <p>KSH 3,000</p>
+      <p>
+        Water resistant build.Includes branded box..Functional date display
+      </p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+          <!-- Swiper Controls -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+</section>
+
+
+<!-- 🚲 Cycling Tech & Essentials Section -->
+<section id="cycling-tech" class="container my-5">
+  <h2>Cycling Essentials</h2>
+
+  <div class="swiper tech-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide: Thermal Water Bottles Group 1 -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="Thermal Water Bottle" data-price="1500">
+    <div class="card">
+      <div id="carouselThermalWaterBottlesGroup1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bottle 1.jpg" class="d-block w-100" alt="Blue Thermal Bottle">
+          </div>
+          <div class="carousel-item">
+            <img src="images/bottle-black.jpg" class="d-block w-100" alt="Black Thermal Bottle">
+          </div>
+          <div class="carousel-item">
+            <img src="images/bottle-white.jpg" class="d-block w-100" alt="White Thermal Bottle">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselThermalWaterBottlesGroup1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselThermalWaterBottlesGroup1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+      <div>
+        <h5>Thermal Bottle</h5>
+        <p>KSH 1,500</p>
+        <p>Keeps drinks hot or cold for hours</p>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+        <i class="bi bi-funnel"></i>
+      </button>
+    </div>
+    <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+      <!-- 🚲 Insta360 Camera -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Insta360 Camera" data-price="55000">
+          <div class="card">
+            <div id="carouselInsta360" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/insta360_1.jpg" class="d-block w-100" alt="Insta360 Camera 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsta360" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselInsta360" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Insta360 Camera</h5>
+            <p>KSH 55,000</p>
+            <p>Capture 360° rides in 4K.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Insta360 Mounts -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Insta360 Mounts" data-price="2500">
+          <div class="card">
+            <div id="carouselInstaMounts" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/insta_mounts1.jpg" class="d-block w-100" alt="Insta360 Mounts 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselInstaMounts" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselInstaMounts" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Insta360 Mounts</h5>
+            <p>KSH 2,500</p>
+            <p>Mount your Insta360 securely.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+            <!-- 🚲 SCVCN Cycling Shades -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="SCVCN Cycling Shades" data-price="2800">
+          <div class="card">
+            <div id="carouselShades" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/shades1.jpg" class="d-block w-100" alt="Cycling Shades 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/shades2.jpg" class="d-block w-100" alt="Cycling Shades 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselShades" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselShades" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>SCVCN Cycling Glasses</h5>
+            <p>KSH 2,800</p>
+            <p>Protect eyes with UV filter lenses.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+  <div class="product-card" data-name="Photochromic Glasses" data-price="1500">
+    <div class="card">
+      <div id="carouselPhotoGlasses" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/photochromic.jpg" class="d-block w-100" alt="Photochromic Glasses">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/photochromic1.jpg" class="d-block w-100" alt="Photochromic Glasses">
+          </div>
+          <div class="carousel-item">
+            <img src="images/photochromic2.jpg" class="d-block w-100" alt="Photochromic Glasses">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotoGlasses" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotoGlasses" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Photochromic Glasses</h5>
+      <p>KSH 1,500</p>
+      <p>Auto-tint lenses for day and night rides.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Slide: DB 180 Whistle Group 1 -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="DB 180 Whistle" data-price="500">
+    <div class="card">
+      <div id="carouselDB180WhistleGroup1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/whistle.jpg" class="d-block w-100" alt="Black DB 180 Whistle">
+          </div>
+          <div class="carousel-item">
+            <img src="images/whistle1.jpg" class="d-block w-100" alt="Red DB 180 Whistle">
+          </div>
+          <div class="carousel-item">
+            <img src="images/whistle2.jpg" class="d-block w-100" alt="Blue DB 180 Whistle">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDB180WhistleGroup1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDB180WhistleGroup1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+      <div>
+        <h5>DB 180 Whistle</h5>
+        <p>KSH 500</p>
+        <p>High-decibel safety whistle for riders</p>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+        <i class="bi bi-funnel"></i>
+      </button>
+    </div>
+    <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+      <!-- 🚲 Bike Computer -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Bike Computer" data-price="6000">
+          <div class="card">
+            <div id="carouselBikeComputer" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/bike_computer1.jpg" class="d-block w-100" alt="Bike Computer 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bike_computer2.jpg" class="d-block w-100" alt="Bike Computer 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bike_computer3.jpg" class="d-block w-100" alt="Bike Computer 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBikeComputer" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBikeComputer" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Bike Computer</h5>
+            <p>KSH 6,000</p>
+            <p>Track speed, distance & stats.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+            <!-- 🚲 LED Front Headlight -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="LED Front Headlight" data-price="2000">
+          <div class="card">
+            <div id="carouselFrontHeadlight" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/front_headlight1.jpg" class="d-block w-100" alt="Front Headlight 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrontHeadlight" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselFrontHeadlight" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>LED Front Headlight</h5>
+            <p>KSH 2,000</p>
+            <p>Bright, rechargeable front bike light.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Rear Red Taillight -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Rear Red Taillight" data-price="1200">
+          <div class="card">
+            <div id="carouselRearTaillight" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/rear_taillight1.jpg" class="d-block w-100" alt="Rear Taillight 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/rear_taillight2.jpg" class="d-block w-100" alt="Rear Taillight 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselRearTaillight" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselRearTaillight" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Rear Red Taillight</h5>
+            <p>KSH 1,200</p>
+            <p>High visibility back light for safety.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+                  <!-- Bike Combination Chain Lock -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Bike Combination Chain Lock" data-price="1500">
+          <div class="card">
+            <div id="carouselChainLock" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/chainlock1.jpg" class="d-block w-100" alt="Chain Lock 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselChainLock" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselChainLock" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Bike Combination Chain Lock</h5>
+            <p>KSH 1,500</p>
+            <p>5-digit resettable combination lock.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+            <!-- Bicycle Allen Keys -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Wooden Bicycle Allen Keys" data-price="1000">
+          <div class="card">
+            <div id="carouselAllenKeys" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/allen1.jpg" class="d-block w-100" alt="Allen Keys 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAllenKeys" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAllenKeys" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Bicycle Allen Keys</h5>
+            <p>KSH 1,000</p>
+            <p>Compact multi-size allen keys set.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 5-Digit Bike Lock -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="5-Digit Bike Lock" data-price="1500">
+          <div class="card">
+            <div id="carousel5DigitLock" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/lock1.jpg" class="d-block w-100" alt="5-Digit Bike Lock">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel5DigitLock" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel5DigitLock" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>5-Digit Combination Lock</h5>
+            <p>KSH 1,500</p>
+            <p>Robust, secure, easy to reset.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bike Puncture Repair Kit -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Bike Puncture Repair Kit" data-price="1000">
+          <div class="card">
+            <div id="carouselPunctureKit" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/puncture1.jpg" class="d-block w-100" alt="Bike Puncture Repair Kit">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPunctureKit" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPunctureKit" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Bike Puncture Repair Kit</h5>
+            <p>KSH 1,000</p>
+            <p>Quick fix for any ride.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Combo Light Set -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Bike Light Combo Set" data-price="3000">
+          <div class="card">
+            <div id="carouselComboLights" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/combo_lights1.jpg" class="d-block w-100" alt="Combo Lights 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselComboLights" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselComboLights" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Bike Light Combo Set</h5>
+            <p>KSH 3,000</p>
+            <p>Front & rear rechargeable light set.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+  <div class="product-card" data-name="Fork Pump" data-price="2500">
+    <div class="card">
+      <div id="carouselForkPump" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/fork_pump1.jpg" class="d-block w-100" alt="Fork Pump">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselForkPump" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselForkPump" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Fork Pump</h5>
+      <p>KSH 5,000</p>
+      <p>High-pressure fork pump with precise PSI gauge.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Slide: Clipless Pedals Group 1 -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="Clipless Pedals" data-price="4500">
+    <div class="card">
+      <div id="carouselCliplessPedalsGroup1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pedals-black.jpg" class="d-block w-100" alt="Black Clipless Pedals">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pedals-black1.jpg" class="d-block w-100" alt="Silver Clipless Pedals">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pedals-black2.jpg" class="d-block w-100" alt="Red Clipless Pedals">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCliplessPedalsGroup1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCliplessPedalsGroup1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+      <div>
+        <h5>Clipless Pedals</h5>
+        <p>KSH 4,500</p>
+        <p>Durable and lightweight for performance cycling</p>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+        <i class="bi bi-funnel"></i>
+      </button>
+    </div>
+    <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+      <!-- 🚲 Power Bank -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Cycling Power Bank" data-price="3500">
+          <div class="card">
+            <div id="carouselPowerBank" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/powerbank1.jpg" class="d-block w-100" alt="Power Bank 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPowerBank" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPowerBank" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Cycling Power Bank</h5>
+            <p>KSH 3,500</p>
+            <p>Stay charged on long rides.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="Cycling Gloves" data-price="1200">
+    <div class="card">
+      <div id="carouselCyclingGloves" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cycling_gloves1.jpg" class="d-block w-100" alt="Cycling Gloves">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cycling_gloves2.jpg" class="d-block w-100" alt="Cycling Gloves">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/cycling_gloves3.jpg" class="d-block w-100" alt="Cycling Gloves">
+          </div>
+          <div class="carousel-item ">
+            <img src="images/cycling_gloves4.jpg" class="d-block w-100" alt="Cycling Gloves">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCyclingGloves" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCyclingGloves" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Cycling Gloves</h5>
+      <p>KSH 1,200</p>
+      <p>Padded gloves for grip and shock absorption.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="Standard Alloy Water Cage" data-price="400">
+    <div class="card">
+      <div id="carouselAlloyCage" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/water_cage_alloy.jpg" class="d-block w-100" alt="Alloy Water Cage">
+          </div>
+          <div class="carousel-item">
+            <img src="images/water_cage_alloy2.jpg" class="d-block w-100" alt="Alloy Water Cage">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlloyCage" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAlloyCage" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Standard Alloy Water Cage</h5>
+      <p>KSH 400</p>
+      <p>Lightweight aluminum, fits most bottles.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="swiper-slide">
+  <div class="product-card" data-name="Carbon Fiber Water Cage" data-price="1800">
+    <div class="card">
+      <div id="carouselCarbonCage" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/water_cage_carbon.jpg" class="d-block w-100" alt="Carbon Fiber Water Cage">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarbonCage" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCarbonCage" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Carbon Fiber Water Cage</h5>
+      <p>KSH 1,800</p>
+      <p>Ultra-light and sleek design for road bikes.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- 🚲 Balaclava -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Cycling Balaclava" data-price="1500">
+          <div class="card">
+            <div id="carouselBalaclava" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/balaclava1.jpg" class="d-block w-100" alt="Balaclava 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/balaclava2.jpg" class="d-block w-100" alt="Balaclava 2">
+                </div>
+                 <div class="carousel-item">
+                  <img src="images/balaclava3.jpg" class="d-block w-100" alt="Balaclava 2">
+                </div>
+                 <div class="carousel-item">
+                  <img src="images/balaclava4.jpg" class="d-block w-100" alt="Balaclava 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBalaclava" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBalaclava" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Cycling Balaclava</h5>
+            <p>KSH 1,500</p>
+            <p>Windproof face & neck cover.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Pannier Bag -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Pannier Bag" data-price="4000">
+          <div class="card">
+            <div id="carouselPannierBag" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/pannier1.jpg" class="d-block w-100" alt="Pannier Bag 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPannierBag" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPannierBag" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Pannier Bag</h5>
+            <p>KSH 4,000</p>
+            <p>Waterproof side storage for bikes.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+  <div class="product-card" data-name="Disc Brake Pads" data-price="1000">
+    <div class="card">
+      <div id="carouselDiscBrakePads" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/disc_brake_pads1.jpg" class="d-block w-100" alt="Disc Brake Pads">
+          </div>
+           <div class="carousel-item">
+            <img src="images/disc_brake_pads2.jpg" class="d-block w-100" alt="Disc Brake Pads">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiscBrakePads" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDiscBrakePads" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Disc Brake Pads</h5>
+      <p>KSH 1,000</p>
+      <p>Reliable stopping power for MTB and road bikes.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+ <section id="bicycle-accessories" class="container my-5">
+  <h2>Bicycle Racks</h2>
+  <div class="swiper accessories-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Thule ProRide XT Roof Bike Rack -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Thule ProRide XT Roof Bike Rack" data-price="25000">
+          <div class="card">
+            <div id="carouselThuleRack" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/thule-proride.jpg" class="d-block w-100" alt="Thule ProRide XT 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselThuleRack" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselThuleRack" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Thule ProRide XT Roof Bike Rack</h5>
+            <p>KSH 25,000</p>
+            <p>Robust roof rack for safe bike transport.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+  <div class="product-card" data-name="Wall Mount Bicycle Hanger" data-price="2200">
+    <div class="card">
+      <div id="carouselWallMountHanger" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/wall_mount_hanger1.jpg" class="d-block w-100" alt="Wall Mount Bicycle Hanger">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWallMountHanger" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWallMountHanger" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2">
+      <h5>Wall Mount Bicycle Hanger</h5>
+      <p>KSH 2,200</p>
+      <p>Space-saving solution for secure bike storage.</p>
+      <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+            <!-- Bike Fastener -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Bike Fastener" data-price="700">
+          <div class="card">
+            <div id="carouselFastener" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/fastener1.jpg" class="d-block w-100" alt="Bike Fastener">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselFastener" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselFastener" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Bike Fastener</h5>
+            <p>KSH 700</p>
+            <p>Secure mounting solution.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide: Saddle Bags Group 1 -->
+<div class="swiper-slide">
+  <div class="product-card" data-name="Saddle Bag" data-price="2000">
+    <div class="card">
+      <div id="carouselSaddleBagsGroup1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/saddlebag.jpg" class="d-block w-100" alt="Black Saddle Bag">
+          </div>
+          <div class="carousel-item">
+            <img src="images/saddlebag1.jpg" class="d-block w-100" alt="Grey Saddle Bag">
+          </div>
+          <div class="carousel-item">
+            <img src="images/saddlebag2.jpg" class="d-block w-100" alt="Navy Saddle Bag">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSaddleBagsGroup1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSaddleBagsGroup1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+      <div>
+        <h5>Saddle Bag</h5>
+        <p>KSH 2,000</p>
+        <p>Compact storage for tools & essentials</p>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+        <i class="bi bi-funnel"></i>
+      </button>
+    </div>
+    <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+      <!-- Bike Rack -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Saris Bones Bike Rack" data-price="14000">
+          <div class="card">
+            <div id="carouselSarisBones" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/saris1.jpg" class="d-block w-100" alt="Saris Bones 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/saris.jpg" class="d-block w-100" alt="Saris Bones 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/saris2.jpg" class="d-block w-100" alt="Saris Bones 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSarisBones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSarisBones" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Suckle roof rack</h5>
+            <p>KSH 14,000</p>
+            <p>Durable mounted bike rack system.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Controls -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+</section>
+
+<section id="computer-peripherals" class="container my-5">
+  <h2>Computer Peripherals</h2>
+
+  <div class="swiper peripherals-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Keyboard -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Keyboard (Wired)" data-price="1500">
+          <div class="card">
+            <div id="carouselKeyboardWired" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/keyboard_wired.jpg" class="d-block w-100" alt="Wired Keyboard">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselKeyboardWired" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselKeyboardWired" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Keyboard (Wired)</h5>
+            <p>KSH 1,500</p>
+            <p>Reliable USB keyboard for daily typing needs.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wireless Keyboard -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Keyboard (Wireless)" data-price="2500">
+          <div class="card">
+            <div id="carouselKeyboardWireless" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/keyboard_wireless.jpg" class="d-block w-100" alt="Wireless Keyboard">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselKeyboardWireless" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselKeyboardWireless" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Keyboard (Wireless)</h5>
+            <p>KSH 2,500</p>
+            <p>Bluetooth keyboard with ergonomic layout.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mouse Wired -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Mouse (Wired)" data-price="800">
+          <div class="card">
+            <div id="carouselMouseWired" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/mouse_wired.jpg" class="d-block w-100" alt="Wired Mouse">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMouseWired" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMouseWired" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Mouse (Wired)</h5>
+            <p>KSH 800</p>
+            <p>Accurate optical sensor with plug-and-play support.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mouse Wireless -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Mouse (Wireless)" data-price="1800">
+          <div class="card">
+            <div id="carouselMouseWireless" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/mouse_wireless.jpg" class="d-block w-100" alt="Wireless Mouse">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMouseWireless" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMouseWireless" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Mouse (Wireless)</h5>
+            <p>KSH 1,800</p>
+            <p>Compact design with 2.4GHz wireless connectivity.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitor -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Monitor" data-price="12000">
+          <div class="card">
+            <div id="carouselMonitor" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/monitor.jpg" class="d-block w-100" alt="Monitor">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonitor" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMonitor" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Monitor</h5>
+            <p>KSH 12,000</p>
+            <p>Full HD display with HDMI and VGA ports.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speakers -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Speakers" data-price="3500">
+          <div class="card">
+            <div id="carouselSpeakers" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/speakers.jpg" class="d-block w-100" alt="Speakers">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpeakers" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSpeakers" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Speakers</h5>
+            <p>KSH 3,500</p>
+            <p>2.1 stereo system with bass boost.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Hard Drive -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="External Hard Drive" data-price="8500">
+          <div class="card">
+            <div id="carouselHDD" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/hard_drive.jpg" class="d-block w-100" alt="External Hard Drive">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselHDD" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselHDD" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>External Hard Drive</h5>
+            <p>KSH 8,500</p>
+            <p>1TB USB 3.0 portable drive for backups.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- USB Flash Drive -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="USB Flash Drive" data-price="1000">
+          <div class="card">
+            <div id="carouselUSB" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/usb_flash.jpg" class="d-block w-100" alt="USB Flash Drive">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselUSB" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselUSB" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>USB Flash Drive</h5>
+            <p>KSH 1,000</p>
+            <p>32GB USB 3.0 for quick file transfers.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SD Card -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="SD Card" data-price="1200">
+          <div class="card">
+            <div id="carouselSDCard" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/sd_card.jpg" class="d-block w-100" alt="SD Card">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSDCard" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSDCard" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>SD Card</h5>
+            <p>KSH 1,200</p>
+            <p>64GB Class 10 microSD for devices.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modem -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="4G Modem" data-price="3500">
+          <div class="card">
+            <div id="carouselModem" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/modem.jpg" class="d-block w-100" alt="4G Modem">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselModem" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselModem" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>4G Modem</h5>
+            <p>KSH 3,500</p>
+            <p>Fast plug-and-play network connectivity.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wi-Fi Adapter -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="External Wi-Fi Adapter" data-price="1800">
+          <div class="card">
+            <div id="carouselWiFiAdapter" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/wifi_adapter.jpg" class="d-block w-100" alt="Wi-Fi Adapter">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselWiFiAdapter" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselWiFiAdapter" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>External Wi-Fi Adapter</h5>
+            <p>KSH 1,800</p>
+            <p>Dual-band USB adapter with antenna support.</p>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<!-- Cyclist Accessories -->
+<section id="cyclist-accessories" class="container my-5">
+  <h2></h2>
+
+  <div class="swiper cling-Swiper">
+    <div class="swiper-wrapper">
+
+
+    </div>
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Cyclist Accessories -->
+<section id="Accessories" class="container my-5">
+  <h2>Spares and Upgrades </h2>
+
+  <div class="swiper cling-Swiper">
+    <div class="swiper-wrapper">
+
+      <!-- 🚲 Fork: Suspension Fork -->
+      <div class="swiper-slide">
+        <div class="product-card">
+          <div class="card">
+            <div id="carouselSuspensionFork" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/fork_suspension1.jpg" class="d-block w-100" alt="Suspension Fork 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/fork_suspension2.jpg" class="d-block w-100" alt="Suspension Fork 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSuspensionFork" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSuspensionFork" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Suspension Fork</h5>
+            <p>KSH 7,500</p>
+            <p>Ideal for MTB & rugged trails.</p>
+            <button class="btn btn-success" onclick="openChatModal('Suspension Fork')">Chat</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Tires: Mountain Bike Tires -->
+      <div class="swiper-slide">
+        <div class="product-card">
+          <div class="card">
+            <div id="carouselMTBTires" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/tires_mtb1.jpg" class="d-block w-100" alt="MTB Tires 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/tires_mtb2.jpg" class="d-block w-100" alt="MTB Tires 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTBTires" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMTBTires" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Mountain Bike Tires</h5>
+            <p>KSH 3,000</p>
+            <p>Durable off-road traction.</p>
+            <button class="btn btn-success" onclick="openChatModal('Mountain Bike Tires')">Chat</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Helmet: Road Cycling Helmet -->
+      <div class="swiper-slide">
+        <div class="product-card">
+          <div class="card">
+            <div id="carouselRoadHelmet" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/helmet_road1.jpg" class="d-block w-100" alt="Road Helmet 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselRoadHelmet" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselRoadHelmet" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Road Cycling Helmet</h5>
+            <p>KSH 4,500</p>
+            <p>Lightweight aerodynamic protection.</p>
+            <button class="btn btn-success" onclick="openChatModal('Road Cycling Helmet')">Chat</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Cassette: 11-Speed Chain Cassette -->
+      <div class="swiper-slide">
+        <div class="product-card">
+          <div class="card">
+            <div id="carouselCassette" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cassette1.jpg" class="d-block w-100" alt="Cassette 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCassette" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCassette" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>11-Speed Chain Cassette</h5>
+            <p>KSH 2,800</p>
+            <p>Smooth gear shifts for all terrains.</p>
+            <button class="btn btn-success" onclick="openChatModal('11-Speed Chain Cassette')">Chat</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚲 Saddle & Seat Post -->
+      <div class="swiper-slide">
+        <div class="product-card">
+          <div class="card">
+            <div id="carouselSaddleSeatPost" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/saddle1.jpg" class="d-block w-100" alt="Saddle 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/seatpost1.jpg" class="d-block w-100" alt="Seat Post">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSaddleSeatPost" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSaddleSeatPost" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2">
+            <h5>Saddle & Seat Post</h5>
+            <p>KSH 3,200</p>
+            <p>Ergonomic comfort for long rides.</p>
+            <button class="btn btn-success" onclick="openChatModal('Saddle & Seat Post')">Chat</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <!-- Banner Section -->
+  <section class="container my-5">
+    <img src="images/banner-sale.jpg" alt="Sale Banner" class="img-fluid w-100 rounded">
+  </section>
+
+<section id="bags" class="container my-5">
+  <h2 class="mb-4">Women's Bags & Purses</h2>
+
+  <!-- Swiper -->
+  <div class="swiper bags-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide: Crossbody Purse -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Crossbody Purse" data-price="2500">
+          <div class="card">
+            <div id="carouselCrossbodyPurse" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/purse-black.jpg" class="d-block w-100" alt="Black Crossbody Purse">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/purse-brown.jpg" class="d-block w-100" alt="Brown Crossbody Purse">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/purse-pink.jpg" class="d-block w-100" alt="Pink Crossbody Purse">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCrossbodyPurse" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCrossbodyPurse" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Crossbody Purse</h5>
+              <p>KSH 2,500</p>
+              <p>Elegant and compact for daily use</p>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+              <i class="bi bi-funnel"></i>
+            </button>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Slide: Shoulder Tote Bag -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Shoulder Tote Bag" data-price="3500">
+          <div class="card">
+            <div id="carouselToteBag" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/tote-bag-beige.jpg" class="d-block w-100" alt="Beige Tote Bag">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/tote-bag-black.jpg" class="d-block w-100" alt="Black Tote Bag">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/tote-bag-maroon.jpg" class="d-block w-100" alt="Maroon Tote Bag">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselToteBag" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselToteBag" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Shoulder Tote Bag</h5>
+              <p>KSH 3,500</p>
+              <p>Spacious & stylish for work or errands</p>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+              <i class="bi bi-funnel"></i>
+            </button>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Slide: Mini Handbag -->
+      <div class="swiper-slide">
+        <div class="product-card" data-name="Mini Handbag" data-price="1800">
+          <div class="card">
+            <div id="carouselMiniHandbag" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/mini-handbag-white.jpg" class="d-block w-100" alt="White Mini Handbag">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mini-handbag-green.jpg" class="d-block w-100" alt="Green Mini Handbag">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/mini-handbag-nude.jpg" class="d-block w-100" alt="Nude Mini Handbag">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMiniHandbag" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMiniHandbag" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+            <div>
+              <h5>Mini Handbag</h5>
+              <p>KSH 1,800</p>
+              <p>Chic and minimal for evenings out</p>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+              <i class="bi bi-funnel"></i>
+            </button>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- ✅ Mtumba Products Section -->
+<section id="mtumba" class="container my-5">
+  <h2 class="mb-4">..</h2>
+
+  <div class="swiper mtumba-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Mtumba Item 1 -->
+
+    </div>
+
+    <!-- Swiper Pagination (optional) -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+  <!-- Shoe Size Selection Modal (global) -->
+<div class="modal fade" id="shoeSizeModal" tabindex="-1" aria-labelledby="shoeSizeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shoeSizeModalLabel">Select Shoe Size</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Shoe sizes example: 6 to 12 -->
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(6)">6</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(7)">7</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(8)">8</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(9)">9</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(10)">10</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(11)">11</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseShoeSize(12)">12</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Size Selection Modal (once, global) -->
+<div class="modal fade" id="sizeModal" tabindex="-1" aria-labelledby="sizeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sizeModalLabel">Size</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('XS')">XS</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('S')">S</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('M')">M</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('L')">L</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('XL')">XL</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('XXL')">XXL</button>
+        <button class="btn btn-outline-primary m-1" onclick="chooseSize('XXXL')">XXXL</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Chat Modal -->
+<div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chatModalLabel">Specify Your Request</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="chatForm">
+          <div class="mb-3">
+            <label for="userName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="userMessage" class="form-label">Describe the Part & Specs</label>
+            <textarea class="form-control" id="userMessage" rows="4" placeholder="e.g. Need a 100mm travel fork for 29-inch MTB" required></textarea>
+          </div>
+          <input type="hidden" id="productName">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success" onclick="sendWhatsApp()">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Social Buttons -->
+  <div class="social-float">
+    <a href="https://wa.me/254748609227" target="_blank" class="whatsapp">💬</a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram">📸</a>
+    <a href="https://www.facebook.com/yourprofile" target="_blank" class="facebook">📘</a>
+  </div>
+
+<!-- CSS: Bootstrap and Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- JavaScript Libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/SmoothScroll.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Bootstrap Bundle (v5.3.0 includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Scripts -->
+<script src="js/search.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper-init.js"></script>
+
+<footer class="text-center bg-light py-2 fixed-bottom">
+  Designed by Bill Mango
+</footer>
+
+
+</body>
+</html>
