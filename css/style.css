@@ -251,3 +251,21 @@ section .btn:hover {
   transform: scale(1.2);
   cursor: zoom-in;
 }
+/* Ensure product card images are responsive */
+.product-card .carousel-inner img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* or contain, depending on how you want it displayed */
+  border-radius: 5px;
+}
+
+/* Optional: Limit card height to prevent overflow on small screens */
+@media (max-width: 768px) {
+  .product-card .card {
+    height: auto;
+  }
+  .product-card .carousel-inner img {
+    max-height: 250px; /* adjust as needed */
+  }
+}
+
