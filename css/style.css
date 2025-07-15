@@ -1,27 +1,26 @@
 /* ================================
    ✅ GLOBAL RESET
-   ================================ */
+================================ */
 body {
-  overflow-x: hidden; /* Prevent the whole page from horizontal scrolling */
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /* ================================
-   ✅ PRODUCT CARD STYLES (GLOBAL)
-   ================================ */
+   ✅ PRODUCT CARD STYLES
+================================ */
 .product-card .card {
   width: 100%;
-  height: 200px; /* your fixed card height */
-  overflow: hidden; /* ensures nothing spills outside */
+  height: 260px; /* Default desktop height */
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.product-card .card img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease-in-out;
 }
 
 .product-card .card:hover {
@@ -29,14 +28,9 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.product-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .product-card .product-info {
   padding: 1rem;
+  position: relative;
 }
 
 .product-card .product-info h5 {
@@ -56,85 +50,74 @@ body {
   white-space: nowrap;
 }
 
-/* ✅ Carousel arrows inside product carousels */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
+/* ================================
+   ✅ IMAGE STYLING (NO CROPPING)
+================================ */
+.product-card .card img,
+.product-card .carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
+/* ================================
+   ✅ RESPONSIVE CARD HEIGHTS
+================================ */
+@media (max-width: 992px) {
+  .product-card .card {
+    height: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .product-card .card {
+    height: 180px;
+  }
+}
+@media (max-width: 576px) {
+  .product-card .card {
+    height: 160px;
+  }
+}
 
 /* ================================
-   ✅ SWIPER CONTAINER & SLIDES
-   ================================ */
-
+   ✅ SWIPER STYLES
+================================ */
 .swiper {
   width: 100%;
-  overflow: hidden;          /* Hide native overflow */
-  -ms-overflow-style: none;  /* Hide scrollbar IE & Edge */
-  scrollbar-width: none;     /* Hide scrollbar Firefox */
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
 .swiper::-webkit-scrollbar {
-  display: none;  /* Hide scrollbar Chrome, Safari, Opera */
+  display: none;
 }
-
 .swiper-wrapper {
   display: flex;
-  overflow: visible; /* Allow slides to peek out if needed */
+  overflow: visible;
 }
-
 .swiper-slide {
-  width: auto;         /* Let Swiper handle slide sizing */
-  flex: 0 0 auto;      /* Slides don’t grow/shrink */
+  width: auto;
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
-  padding: 10px;       /* Space around slides */
+  padding: 10px;
 }
-
-
-/* ================================
-   ✅ SWIPER NAV & PAGINATION
-   ================================ */
-
 .swiper-button-next,
 .swiper-button-prev {
-  color: #333;          /* Make sure arrows are visible */
+  color: #333;
 }
-
 .swiper-pagination {
-  position: relative;   /* Keeps it below slides */
+  position: relative;
   margin-top: 15px;
 }
 
-
 /* ================================
-   ✅ RESPONSIVE CARD SIZE
-   ================================ */
-
-@media (max-width: 768px) {
-  .product-card .card {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 576px) {
-  .product-card .card {
-    max-width: 180px;
-  }
-}
-/* ================================
-   Filter Icon Button Styles
-   ================================ */
-
-.product-info .btn-filter {
-  border: none;
-  background: transparent;
-  color: #333;
-  font-size: 1.2rem;
-  padding: 0.25rem;
-  transition: color 0.3s ease;
-}
-
+   ✅ FILTER BUTTON
+================================ */
 .product-info .btn-filter {
   border: none;
   background: transparent;
@@ -143,35 +126,16 @@ body {
   padding: 0.25rem 0.5rem;
   transition: color 0.3s ease;
 }
-
 .product-info .btn-filter:hover {
-  color: #007bff; /* Bootstrap primary color */
+  color: #007bff;
   cursor: pointer;
 }
 
-
-.product-info .btn-filter:hover {
-  color: #007bff; /* Bootstrap primary color */
-  cursor: pointer;
-}
-
-.product-info .btn-filter {
-  border: none;
-  background: transparent;
-  color: #333;
-  font-size: 1.2rem;
-  padding: 0.25rem;
-  transition: color 0.3s ease;
-}
-
-.product-info .btn-filter:hover {
-  color: #007bff; /* Bootstrap primary color */
-  cursor: pointer;
-}
-
-/* Optional: style dropdown or modal */
+/* ================================
+   ✅ COLOR DROPDOWN
+================================ */
 .color-options {
-  display: none; /* hidden by default */
+  display: none;
   position: absolute;
   background: #fff;
   border: 1px solid #ddd;
@@ -180,7 +144,6 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   z-index: 1000;
 }
-
 .color-options button {
   display: block;
   width: 100%;
@@ -189,24 +152,19 @@ body {
   text-align: left;
   padding: 0.25rem 0.5rem;
 }
-
 .color-options button:hover {
   background: #f0f0f0;
 }
-.product-info {
-  position: relative; /* so dropdowns position properly */
-}
-html {
-  scroll-behavior: smooth;
-}
-/* Force 4 cards per row, even on mobile */
+
+/* ================================
+   ✅ RESPONSIVE GRID
+================================ */
 @media (max-width: 576px) {
   .row-cols-2 > * {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
-
 @media (min-width: 576px) {
   .row-cols-md-4 > * {
     flex: 0 0 25%;
@@ -214,58 +172,27 @@ html {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* ================================
+   ✅ BUTTON EFFECTS
+================================ */
 section .btn {
   transition: all 0.2s ease-in-out;
 }
-
 section .btn:hover {
   transform: translateY(-2px);
 }
-.product-card .carousel { 
-  height: 250px; 
-  overflow: hidden;
-}
-.product-card .carousel-inner img {
-  width:100%;
-  height:250px;
-  object-fit:cover;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon { filter: invert(1); }
 
-/* ===== Zoom on hover for cart images ===== */
+/* ================================
+   ✅ ZOOM HOVER (OPTIONAL)
+================================ */
 .zoom-hover {
   overflow: hidden;
   position: relative;
 }
-
 .zoom-hover img {
   transition: transform 0.3s ease;
 }
-
 .zoom-hover:hover img {
   transform: scale(1.2);
   cursor: zoom-in;
 }
-/* Ensure product card images are responsive */
-.product-card .carousel-inner img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* or contain, depending on how you want it displayed */
-  border-radius: 5px;
-}
-
-/* Optional: Limit card height to prevent overflow on small screens */
-@media (max-width: 768px) {
-  .product-card .card {
-    height: auto;
-  }
-  .product-card .carousel-inner img {
-    max-height: 250px; /* adjust as needed */
-  }
-}
-
