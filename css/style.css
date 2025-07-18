@@ -229,26 +229,24 @@ section .btn:hover {
 }
 
 .social-float a {
-  font-size: 24px;
-  color: white;
-  background-color: #25D366; /* WhatsApp green */
-  padding: 10px;
-  border-radius: 50%;
+  font-size: 24px;        /* Icon size */
+  color: #25D366;         /* Default: WhatsApp color */
+  background: none;       /* Remove background */
+  padding: 0;             /* Remove padding */
+  border-radius: 0;       /* Remove rounding */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
+  box-shadow: none;       /* Remove shadow */
   text-decoration: none;
 }
 
 .social-float a.instagram {
-  background-color: #E1306C;
+  color: #E1306C;
 }
 
 .social-float a.facebook {
-  background-color: #1877F2;
+  color: #1877F2;
 }
 
 .social-float a:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
-
