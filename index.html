@@ -68,8 +68,8 @@
     <li><a class="dropdown-item" href="#cycling-tech">Cycling Essentials</a></li>
     <li><a class="dropdown-item" href="#best-sellers">Best Sellers</a></li>
   </ul>
-</div>
-    
+    </div>
+
     <!-- 2️⃣ SEE DEALS -->
     <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -1704,6 +1704,37 @@
   </div>
 </div>
 
+<div class="swiper-slide">
+  <div class="product-card" data-name="Cycling Helmet" data-price="4500">
+    <div class="card">
+      <div id="carouselCyclingHelmet" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/helmet_road1.jpg" class="d-block w-100" alt="Helmet Front View">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCyclingHelmet" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCyclingHelmet" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="product-info mt-2 p-2 d-flex justify-content-between align-items-center">
+      <div>
+        <h5>Cycling Helmet</h5>
+        <p>KSH 4,500</p>
+        <p>Lightweight, aerodynamic & secure fit</p>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary btn-filter" data-bs-toggle="modal" data-bs-target="#colorModal">
+        <i class="bi bi-funnel"></i>
+      </button>
+    </div>
+    <button class="btn btn-primary mt-2" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
 
       <!-- 🚲 Bike Computer -->
       <div class="swiper-slide">
@@ -2212,7 +2243,7 @@
   </div>
 </section>
 
- <section id="bicycle-accessories" class="container my-5">
+ <section id="Racks" class="container my-5">
   <h2>Bicycle Racks</h2>
   <div class="swiper accessories-swiper">
     <div class="swiper-wrapper">
@@ -2392,11 +2423,11 @@
   </div>
 </section>
 
-<!-- Cyclist Accessories -->
+<!-- Bike Spares -->
 <section id="Accessories" class="container my-5">
-  <h2>Spares and Upgrades </h2>
+  <h2>Bike spares </h2>
 
-  <div class="swiper cling-Swiper">
+  <div class="swiper spares-Swiper">
     <div class="swiper-wrapper">
 
       <!-- 🚲 Fork: Suspension Fork -->
@@ -2459,32 +2490,6 @@
         </div>
       </div>
 
-      <!-- 🚲 Helmet: Road Cycling Helmet -->
-      <div class="swiper-slide">
-        <div class="product-card">
-          <div class="card">
-            <div id="carouselRoadHelmet" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/helmet_road1.jpg" class="d-block w-100" alt="Road Helmet 1">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselRoadHelmet" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselRoadHelmet" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-            </div>
-          </div>
-          <div class="product-info mt-2 p-2">
-            <h5>Road Cycling Helmet</h5>
-            <p>KSH 4,500</p>
-            <p>Lightweight aerodynamic protection.</p>
-            <button class="btn btn-success" onclick="openChatModal('Road Cycling Helmet')">Chat</button>
-          </div>
-        </div>
-      </div>
 
       <!-- 🚲 Cassette: 11-Speed Chain Cassette -->
       <div class="swiper-slide">
