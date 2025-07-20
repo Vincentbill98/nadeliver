@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nadeliver</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png"/>
+
+   <!-- CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Jarallax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.min.js"></script>
+
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/example1/colorbox.min.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header_section sticky-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <button onclick="window.location.href='index.html'" class="btn btn-primary">← Home</button>
+
+
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="Nadeliver" height="50"/>
+      </a>
+      <div class="d-flex gap-2">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search products..." 
+          class="form-control d-inline-block w-auto"
+        />
+        <button class="btn btn-primary" id="searchBtn">Search</button>
+        <a href="cart.html" class="btn btn-light position-relative">
+          🛒 <span id="cartCount" class="badge bg-danger">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+<!-- ===================================
+     ACTION BUTTONS SECTION (4 Cards Inline)
+=================================== -->
+<!-- ✅ Product Quick Navigation Section -->
+<section class="container my-4">
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+
+  <!-- Product Section -->
+
+<section id="mtumba" class="container my-5">
+  <h2 class="mb-4">Mtumba Items</h2>
+  <div class="row g-4">
+
+    <!-- Item 1 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Vintage Denim Jacket" data-price="850">
+        <div id="carouselMtumba1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mtumba1.jpg" class="d-block w-100" alt="Vintage Denim Jacket">
+            </div>
+            <div class="carousel-item">
+              <img src="images/mtumba1b.jpg" class="d-block w-100" alt="Back View">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtumba1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMtumba1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body text-center">
+          <h6>Vintage Denim Jacket</h6>
+          <div class="price">KSH 850</div>
+          <em class="small">Classic unisex denim jacket in good condition.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Floral Summer Dress" data-price="600">
+        <div id="carouselMtumba2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mtumba2.jpg" class="d-block w-100" alt="Floral Summer Dress">
+            </div>
+            <div class="carousel-item">
+              <img src="images/mtumba2b.jpg" class="d-block w-100" alt="Back View">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtumba2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMtumba2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body text-center">
+          <h6>Floral Summer Dress</h6>
+          <div class="price">KSH 600</div>
+          <em class="small">Lightweight cotton dress, size M.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Men’s Leather Loafers" data-price="1200">
+        <div id="carouselMtumba3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mtumba3.jpg" class="d-block w-100" alt="Leather Loafers">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtumba3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMtumba3" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body text-center">
+          <h6>Men’s Leather Loafers</h6>
+          <div class="price">KSH 1,200</div>
+          <em class="small">Genuine leather, size 42.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Oversized Hoodie" data-price="950">
+        <div id="carouselMtumba4" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mtumba4.jpg" class="d-block w-100" alt="Oversized Hoodie">
+            </div>
+            <div class="carousel-item">
+              <img src="images/mtumba4b.jpg" class="d-block w-100" alt="Back View">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtumba4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMtumba4" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body text-center">
+          <h6>Oversized Hoodie</h6>
+          <div class="price">KSH 950</div>
+          <em class="small">Cozy grey hoodie (fits M–XL).</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Brown Leather Handbag" data-price="700">
+        <div id="carouselMtumba5" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mtumba5.jpg" class="d-block w-100" alt="Leather Handbag">
+            </div>
+            <div class="carousel-item">
+              <img src="images/mtumba5b.jpg" class="d-block w-100" alt="Side View">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMtumba5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMtumba5" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body text-center">
+          <h6>Brown Leather Handbag</h6>
+          <div class="price">KSH 700</div>
+          <em class="small">Gently used, stylish and durable.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Sport Sneakers" data-price="1000">
+        <img src="images/mtumba6.jpg" class="card-img-top" alt="Sport Sneakers">
+        <div class="card-body text-center">
+          <h6>Sport Sneakers</h6>
+          <div class="price">KSH 1,000</div>
+          <em class="small">Comfortable and durable, size 43.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Vintage Sunglasses" data-price="300">
+        <img src="images/mtumba7.jpg" class="card-img-top" alt="Vintage Sunglasses">
+        <div class="card-body text-center">
+          <h6>Vintage Sunglasses</h6>
+          <div class="price">KSH 300</div>
+          <em class="small">Retro frame, UV protected.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="card h-100 product-card" data-name="Wool Beanie" data-price="250">
+        <img src="images/mtumba8.jpg" class="card-img-top" alt="Wool Beanie">
+        <div class="card-body text-center">
+          <h6>Wool Beanie</h6>
+          <div class="price">KSH 250</div>
+          <em>Perfect for cold weather. Unisex fit.</em>
+          <button class="btn btn-primary btn-sm" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- CSS: Bootstrap and Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- JavaScript Libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/SmoothScroll.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Bootstrap Bundle (v5.3.0 includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Scripts -->
+<script src="js/search.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/products.js"></script>
+<script src="js/render-products.js"></script>
+<script src="js/navigation.js"></script>
+
+<!-- Other page content here -->
+
+<!-- Social Float Buttons (place just before </body>) -->
+<div class="social-float">
+  <a href="https://wa.me/254748609227" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com/yourprofile" target="_blank" class="facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+
+
+
+<footer class="footer-highlight my-4">
+  <div class="text-center">
+    Designed by 
+    <a href="https://wa.me/254746147272" target="_blank" rel="noopener" class="btn btn-primary btn-sm ms-2">
+      Bill Mango
+    </a>
+  </div>
+</footer>
+
+
+</body>
+</html>
